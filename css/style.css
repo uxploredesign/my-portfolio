@@ -11,19 +11,6 @@ Secondary Color (dark grey): #565457;
 
 img {
     border-radius: 20px; }
-
-.centered-header h1 {
-    text-align: center;
-}
-
-body {
-    font-family: 'poppins', lato;
-    font-size: '16px';
-    font-weight: 300;
-    line-height: 1.6;
-    color: #565457;
-}
-
 h1,
 h2,
 h3,
@@ -89,4 +76,14 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 60px;
+}
+body {
+    font-family: 'poppins', lato;
+    font-size: '16px';
+    font-weight: 300;
+    line-height: 1.6;
+    color: #565457;
+}
+.centered-header h1 {
+    text-align: center;
 }
