@@ -1,0 +1,92 @@
+/*
+Colors used:
+Primary Color (off white): #f5f5f5;
+Secondary Color (dark grey): #565457;
+*/
+.logo {
+    max-width: 100px; /*
+    height: auto; 
+    display: block; 
+}
+
+img {
+    border-radius: 20px; }
+
+.centered-header h1 {
+    text-align: center;
+}
+
+body {
+    font-family: 'poppins', lato;
+    font-size: '16px';
+    font-weight: 300;
+    line-height: 1.6;
+    color: #565457;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+img {
+    width: 100%;
+  }
+
+body {
+    background-color: #f5f5f5;
+}
+
+main a, footer a {
+    color: #5fafff;
+    text-decoration: none;
+}
+
+main a:hover, footer a:hover {
+        color: #bc6afb;
+}
+
+main a:visited, footer a:visited {
+    color: #2775b4; /* Color for visited links */
+}
+
+main a:focus, footer a:focus {
+    color: #a64ef8; /* Color when focused */
+    outline: 2px solid #bc86ef; /* Adding an outline to enhance visibility on focus */
+}
+
+nav a {
+    color: #565457;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: #5fafff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 60px;
+}
