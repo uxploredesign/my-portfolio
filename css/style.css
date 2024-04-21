@@ -9,8 +9,7 @@ Secondary Color (dark grey): #565457;
     display: block; 
 }
 
-img {
-    border-radius: 20px; }
+
 h1,
 h2,
 h3,
@@ -87,3 +86,5 @@ body {
 .centered-header h1 {
     text-align: center;
 }
+img {
+    border-radius: 20px; }
