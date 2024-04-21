@@ -4,57 +4,56 @@ Primary Color (off white): #f5f5f5;
 Secondary Color (dark grey): #565457;
 */
 .logo {
-    max-width: 100px; /*
+    max-width: 100px;
     height: auto; 
     display: block; 
 }
-
 
 h1,
 h2,
 h3,
 h4 {
     line-height: 1.4;
+    margin-bottom: 20px;
 }
-
 h1 {
     font-size: 2.75em;
     font-weight: 700;
 }
-
 h3 {
     font-size: 1.75em;
     font-weight: 400;
 }
-
 h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
 img {
     width: 100%;
-  }
-
+    margin-bottom: 20px;
+}
+p { margin-bottom: 20px;
+}
 body {
     background-color: #f5f5f5;
 }
-
 main a, footer a {
     color: #5fafff;
     text-decoration: none;
 }
-
 main a:hover, footer a:hover {
         color: #bc6afb;
 }
 
 main a:visited, footer a:visited {
-    color: #2775b4; /* Color for visited links */
+    color: #2775b4;
+    margin-bottom: 10px;
 }
 
-main a:focus, footer a:focus {
-    color: #a64ef8; /* Color when focused */
-    outline: 2px solid #bc86ef; /* Adding an outline to enhance visibility on focus */
+main a:focus,
+footer a:focus {
+    color: #a64ef8;
+    outline: 2px solid #bc86ef;
 }
 
 nav a {
@@ -70,33 +69,57 @@ nav a:hover {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 nav li {
     display: inline;
     margin-right: 60px;
 }
-.button {
-    display: inline-block; 
+
+main .button {
+    display: inline-block;
     background-color: #565457;
-    color: #f2f2f2; 
+    color: #f2f2f2;
     text-align: center;
     font-weight: 400;
     padding: 10px;
     border-radius: 10px;
-    border-bottom: 2px solid #a64ef8; /* width of the border, type, color */
+    border-bottom: 2px solid #a64ef8;
     transition: 0.2s opacity;
-  }
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+main .button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.button.contact {
+    background-color: transparent;
+    color: #5fafff;
+    text-transform: uppercase;
+    border: 2px solid #a64ef8;
+}
+
+.button.contact:hover {
+    background-color: #a64ef8;
+    color: #f2f2f2;
+}
+
 body {
     font-family: 'poppins', lato;
     font-size: '16px';
     font-weight: 300;
     line-height: 1.6;
     color: #565457;
+    padding: 20px
 }
+
 .centered-header h1 {
     text-align: center;
 }
+
 img {
-    border-radius: 20px; }
-    
+    border-radius: 20px;
+}
