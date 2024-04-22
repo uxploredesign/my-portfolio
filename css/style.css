@@ -3,10 +3,33 @@ Colors used:
 Primary Color (off white): #f5f5f5;
 Secondary Color (dark grey): #565457;
 */
+
+body {
+    font-family: 'poppins', lato;
+    font-size: '16px';
+    font-weight: 300;
+    line-height: 1.6;
+    color: #565457;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;    
+    justify-content: flex-start; 
+    background-color: #e2e2e2;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
 .logo {
     max-width: 100px;
     height: auto; 
     display: block; 
+}
+nav {
+    margin-left: 20px; /* Adds 20px space between the logo and the navigation */
 }
 
 h1,
@@ -34,9 +57,7 @@ img {
 }
 p { margin-bottom: 20px;
 }
-body {
-    background-color: #f5f5f5;
-}
+
 main a, footer a {
     color: #5fafff;
     text-decoration: none;
@@ -74,7 +95,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 60px;
+    margin-right: 40px;
 }
 
 main .button {
@@ -105,15 +126,6 @@ main .button:hover {
 .button.contact:hover {
     background-color: #a64ef8;
     color: #f2f2f2;
-}
-
-body {
-    font-family: 'poppins', lato;
-    font-size: '16px';
-    font-weight: 300;
-    line-height: 1.6;
-    color: #565457;
-    padding: 20px
 }
 
 .centered-header h1 {
