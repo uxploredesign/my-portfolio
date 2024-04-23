@@ -4,13 +4,17 @@ Primary Color (off white): #f5f5f5;
 Secondary Color (dark grey): #565457;
 */
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'poppins', lato;
     font-size: '16px';
     font-weight: 300;
     line-height: 1.6;
     color: #565457;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     padding: 20px;
 }
 
@@ -18,9 +22,33 @@ header {
     display: flex;
     align-items: center;    
     justify-content: flex-start; 
-    background-color: #e2e2e2;
+    background-color: #424242;
     padding: 10px;
     margin-bottom: 60px;
+}
+
+.hero {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.projects-section {
+    background-color: #f5f5f5;
+    padding: 20px;
 }
 
 .logo {
@@ -29,7 +57,7 @@ header {
     display: block; 
 }
 nav {
-    margin-left: 20px; /* Adds 20px space between the logo and the navigation */
+    margin-left: 20px;
 }
 
 h1,
@@ -59,32 +87,32 @@ p { margin-bottom: 20px;
 }
 
 main a, footer a {
-    color: #5fafff;
+    color: #acff5f;
     text-decoration: none;
 }
 main a:hover, footer a:hover {
-        color: #bc6afb;
+        color: #fb8148;
 }
 
 main a:visited, footer a:visited {
-    color: #2775b4;
+    color: #3fb427;
     margin-bottom: 10px;
 }
 
 main a:focus,
 footer a:focus {
-    color: #a64ef8;
-    outline: 2px solid #bc86ef;
+    color: #b268f8;
+    outline: 2px solid #fb7575;
 }
 
 nav a {
-    color: #565457;
+    color: #ececec;
     text-decoration: none;
 }
 
 
 nav a:hover {
-    color: #5fafff;
+    color: #acff5f;
 }
 
 nav ul {
@@ -100,32 +128,43 @@ nav li {
 
 main .button {
     display: inline-block;
-    background-color: #565457;
-    color: #f2f2f2;
+    background-color: #acff5f;
+    color: #424242;
     text-align: center;
     font-weight: 400;
     padding: 10px;
     border-radius: 10px;
-    border-bottom: 2px solid #a64ef8;
+    border-bottom: 2px solid #fb8148;
     transition: 0.2s opacity;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 main .button:hover {
-    opacity: 0.8;
+    background-color: #fb9363;
+    color: #424242;
     text-decoration: none;
 }
 .button.contact {
-    background-color: transparent;
-    color: #5fafff;
+    background-color: #acff5f;
+    color: #424242;
+    font-weight: 400;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
     text-transform: uppercase;
-    border: 2px solid #a64ef8;
+    border-bottom: 2px solid #fb8148;
 }
 
 .button.contact:hover {
-    background-color: #a64ef8;
-    color: #f2f2f2;
+    background-color: #fb9363;
+    color: #424242;
+    font-weight: 400;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fb8148;
 }
 
 .centered-header h1 {
@@ -134,4 +173,73 @@ main .button:hover {
 
 img {
     border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #424242;
+    color: #f5f5f5
+}
+
+.footer-text {
+    flex: 1;
+}
+
+.footer-actions {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-icon {
+    width: 24px; 
+    height: 24px;
+    margin-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-left: 0;
+        margin-top: 10px; 
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .logo,
+    nav a {
+        text-align: center;
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-text,
+    .footer-actions {
+        flex: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-actions {
+        justify-content: center;
+    }
 }
