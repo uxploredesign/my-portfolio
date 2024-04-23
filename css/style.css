@@ -58,7 +58,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
     display: block;
 }
@@ -72,9 +72,6 @@ h1 {
     font-weight: 700;
     }
 
-h1 .highlight {
-    text-shadow: none; /* Override: No shadow for 'Annette' */
-}
 
 h1,
 h2,
@@ -148,7 +145,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 main .button {
@@ -163,6 +160,7 @@ main .button {
     transition: 0.2s opacity;
     margin-bottom: 10px;
     margin-top: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease, opacity 0.2s ease; 
 }
 
 main .button:hover {
@@ -192,6 +190,7 @@ main .button:hover {
     text-transform: uppercase;
     border-bottom: 2px solid #fb8148;
 }
+
 
 .centered-header h1 {
     text-align: center;
@@ -226,46 +225,3 @@ footer {
     margin-right: 20px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .logo,
-    nav a {
-        text-align: center;
-    }
-
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-text,
-    .footer-actions {
-        flex: none;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .footer-actions {
-        justify-content: center;
-    }
-}
