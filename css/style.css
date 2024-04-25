@@ -20,16 +20,16 @@ header {
     justify-content: space-between; /* Allows space between logo and menu icon on mobile */
     background-color: #424242;
     padding: 10px;
-    position: relative; /* Added to position the nav absolutely relative to header */
+    position: relative;
 }
 
 .navtoggle {
-    display: none; /* Hidden by default, shown only in mobile view */
+    display: none;
     text-align: center;
 }
 
 .navtoggle .icon {
-    display: block; /* The hamburger icon needs to be shown when navtoggle is active */
+    display: block;
     cursor: pointer;
     color: #f5f5f5
 }
@@ -37,11 +37,11 @@ header {
 .navtoggle.responsive nav {
     display: block; /* Will display the nav when .responsive is added via JS */
     position: absolute;
-    width: 100%; /* Covers full width */
+    width: 100%;
     top: 100%; /* Positions right below the header */
     left: 0;
-    background-color: #424242; /* Ensures menu is visually separated from content below */
-    z-index: 1000; /* Ensures the menu is above other content */
+    background-color: #424242; /* menu is visually separated from content below */
+    z-index: 1000; /* menu is above other content */
     
 }
 
@@ -50,26 +50,26 @@ header {
     width: max-content;
     padding: 0;
     margin: 0;
-    background-color: #424242; /* Background of the menu items */
+    background-color: #424242;
     text-align: center;
     position: absolute;
     right: 20px;
 }
 
 .navtoggle nav li {
-    text-align: center; /* Centers the text in the menu */
+    text-align: center; 
 }
 
 .navtoggle nav a {
     color: #ececec;
     text-decoration: none;
-    display: block; /* Makes the link fill the li */
-    padding: 10px; /* Padding for touch friendliness */
+    display: block;
+    padding: 10px; 
     white-space: nowrap;
 }
 
 .navtoggle nav a:hover {
-    background-color: #fb8a4d; /* Hover effect for links */
+    background-color: #fb8a4d; 
 }
 
 
@@ -135,7 +135,7 @@ p {
 }
 
 main { 
-margin-top: 0;
+    margin-top: 0;
 }
 
 .row { 
@@ -151,12 +151,12 @@ footer a {
 
 main a:hover,
 footer a:hover {
-    color: #fb8148;
+    color: #8fe340;
 }
 
 main a:visited,
 footer a:visited {
-    color: #3fb427;
+    color: #edaa02;
     margin-bottom: 10px;
 }
 
@@ -188,7 +188,6 @@ nav li {
 }
 
 
-
 main .button {
     display: inline-block;
     background-color: #acff5f;
@@ -206,7 +205,7 @@ main .button {
 }
 
 main .button:hover {
-    background-color: #acff5f;
+    background-color: #8fe340;
     color: #424242;
     text-decoration: none;
     opacity: 0.5;
@@ -227,13 +226,12 @@ main .button:hover {
 }
 
 .button.contact:hover {
-    background-color: #acff5f;
+    background-color: #8fe340;
     color: #424242;
     font-weight: 400;
     padding: 10px;
     margin-right: 10px;
     border-radius: 10px;
-    text-transform: uppercase;
     text-align: center;
     border-bottom: 2px solid #fb8148;
     opacity: 0.5;
@@ -259,6 +257,7 @@ footer {
 
 .footer-text {
     flex: 1;
+    margin-right: 10px;
 }
 
 .footer-actions {
@@ -277,22 +276,22 @@ footer {
 /* Specific styles for mobile devices */
 @media (max-width: 640px) {
     .navtoggle {
-        display: block; /* Show the mobile nav toggle button */
+        display: block;
     }
 
     .navtoggle .icon {
-        display: block; /* Ensure icon is visible */
+        display: block; /* icon is visible */
     }
 
     .navtoggle.responsive nav {
-        display: block; /* Show nav when toggle is active */
-        background-color: #333; /* Optional: change if different background is required */
+        display: block;
+        background-color: #333; 
     }
 
     .navtoggle.responsive li a {
         display: block; /* Stack the links vertically */
-        padding: 10px; /* More tap-friendly padding */
-        color: white; /* Ensure text is visible */
+        padding: 10px;
+        color: white;
     }
 
     nav {
@@ -303,16 +302,16 @@ footer {
 /* Styles for tablets and larger screens */
 @media (min-width: 641px) {
     .navtoggle {
-        display: none; /* Hide the mobile menu toggle */
+        display: none; 
     }
 
     header {
-        justify-content: flex-start; /* Align items to start for larger screens */
+        justify-content: flex-start;
     }
 
     nav ul {
-        display: flex; /* Align nav items inline for larger screens */
-        justify-content: center; /* Center align nav items */
+        display: flex; 
+        justify-content: center;
     }
 }
    
