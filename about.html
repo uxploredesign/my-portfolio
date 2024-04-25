@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" class="hamburger">
+  
+
 </head>
 
 <body>
@@ -26,6 +30,20 @@
             </ul>
 
         </nav>
+
+        <div class="navtoggle" id="myNavtoggle">
+            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i> <!-- Fontawesome hamburger icon -->
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
  
     <main>
@@ -139,6 +157,7 @@
 
     </footer>
 
+    
     <script src="js/scripts.js"></script>
 
 </body>
